@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         val edUsername:EditText = findViewById(R.id.ed_username)
         val edPass:EditText = findViewById(R.id.ed_password)
         val btnLogin:Button = findViewById(R.id.btn_login)
-        val txMensaje:TextView = findViewById(R.id.tx_mensaje)
+
 
         var defUsername = "uAdmin"
         var defPass = "admin123"
@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
                 nuevaVentana.putExtra("par_usern",edUsername.text.toString())
                 startActivity(nuevaVentana)
             }else{
-                txMensaje.text = "ERROR USUARIO/PASSWORD"
+               // txMensaje.text = "ERROR USUARIO/PASSWORD"
             }
 
 
